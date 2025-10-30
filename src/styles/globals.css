@@ -1,0 +1,181 @@
+  @import "tailwindcss";
+
+  body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 200;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus,
+  button:focus {
+    outline: none;
+  }
+
+  button,
+  a {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .toaster {
+    z-index: 9999 !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #071F45;
+    border-radius: 5px;
+  }
+
+  /* Responsive Widths */
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+
+  /* Full-Width for Smaller Screens */
+  @media (max-width: 575px) {
+    .container {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  /* Centering Content */
+  .container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .font-primary {
+    font-family: "Be Vietnam Pro", sans-serif;
+  }
+
+  .font-secondary {
+    font-family: "Albert Sans", sans-serif;
+  }
+
+  .text-primary {
+    color: #071F45;
+  }
+
+  .text-secondary {
+    color: #B4D1FF;
+  }
+
+  .bg-primary {
+    background-color: #071F45;
+  }
+
+  .bg-secondary {
+    background-color: #B4D1FF;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  /* Neumorphism effect only */
+  .neumorphism {
+    box-shadow: 1.5px 1.5px 3px #97979740,
+      /* dark shadow bottom-right */ -1px -1px 3px #ffffff40; /* light shadow top-left */
+  }
+
+  .neumorphism:hover {
+    box-shadow: inset 1.5px 1.5px 3px #97979740, inset -1px -1px 3px #ffffff40;
+  }
+  .map-card {
+    box-shadow: 3.62px 3.62px 4.71px 1.81px rgba(0, 0, 0, 0.15),
+      -3.62px -3.62px 7.52px -0.91px rgba(0, 0, 0, 0.23);
+  }
+
+  /* src/styles/loader.css */
+
+  /* Truck moving animation */
+  @keyframes move-container {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(150px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Track line animation */
+  @keyframes track {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  /* Animation classes */
+  .animate-move-container {
+    animation: move-container 2.5s ease-in-out infinite;
+  }
+
+  .animate-track {
+    animation: track 2s linear infinite;
+  }
+
