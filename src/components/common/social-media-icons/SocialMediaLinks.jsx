@@ -46,7 +46,7 @@ function SocialMediaLinks() {
           key={index + 123}
           title={link.title}
           href={link.path}
-          className="text-black text-[16px] w-max bg-[#fca213] p-2 rounded-full hover:text-black hover:scale-[1.15] transition-all duration-300 ease-in-out"
+          className="text-[#071F45] text-[16px] w-max bg-white p-2 rounded-full hover:text-black hover:scale-[1.15] transition-all duration-300 ease-in-out"
           target="_blank"
           rel="noopener noreferrer"
         >

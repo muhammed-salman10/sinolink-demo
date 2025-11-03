@@ -2,6 +2,7 @@
 import React from "react";
 import { Be_Vietnam_Pro, Albert_Sans } from "next/font/google";
 import Header from "../components/common/header/Header";
+import Footer from "../components/common/footer/Footer";
 
 const beVietnamPro = Be_Vietnam_Pro({
   variable: "--font-be-vie",
@@ -22,7 +23,7 @@ export default function LayoutWrapper({ children, className = "" }) {
     >
       <Header />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
       {/* <ToastContainer theme="dark" autoClose={3000} /> */}
     </div>
   );
