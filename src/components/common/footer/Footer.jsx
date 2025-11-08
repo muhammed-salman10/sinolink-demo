@@ -1,6 +1,5 @@
 // src/components/common/footer/Footer.jsx
 "use client";
-
 import Link from "next/link";
 import React from "react";
 import footerLinks from "./footerLinks.js";
@@ -41,7 +40,7 @@ function Footer() {
             <div className="logo-container lg:max-w-[200px] max-w-[160px] py-6">
               <Link href={"/"} title="max-plus-logo">
                 <Image
-                  src="/assets/logo/header-logo.png"
+                  src="/assets/logo/footer-logo1.png"
                   alt="logo"
                   title="sino-link-official-logo"
                   width={1000}

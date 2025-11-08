@@ -1,4 +1,3 @@
-//src/components/common/header/Header.jsx
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +16,7 @@ function Header() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // prevent background scroll when sidebar open
+  // Prevent background scroll when sidebar is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => {
@@ -25,7 +24,7 @@ function Header() {
     };
   }, [isOpen]);
 
-  // scroll effect
+  // Header scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -39,7 +38,7 @@ function Header() {
       className={`header w-full fixed top-0 left-0 z-[999] transition-all duration-500 
         ${
           isScrolled
-            ? "bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm"
+            ? "backdrop-blur-md border-b border-gray-200 shadow-sm"
             : "bg-transparent backdrop-blur-none border-transparent"
         }`}
     >
@@ -52,7 +51,7 @@ function Header() {
             className="navbar_logo__container lg:w-[170px] md:w-[140px] w-[120px]"
           >
             <Image
-              src="/assets/logo/header-logo.png"
+              src="/assets/logo/nav-logo.png"
               alt="sino-link-official-logo"
               width={1000}
               height={1000}
@@ -63,7 +62,7 @@ function Header() {
 
           {/* Desktop Links */}
           <div className="navbar__links hidden lg:flex">
-            <div className="flex justify-center w-full gap-10 relative">
+            <div className="flex justify-center w-full gap-10 relative ">
               {navLinks.map((nav, index) => {
                 const isActive = pathname === nav.url;
 
@@ -71,11 +70,11 @@ function Header() {
                   return (
                     <div key={index + "nav-parent"} className="relative group">
                       <button
-                        className={`relative font-primary font-[400] text-[18px] px-2 py-1 flex items-center gap-1 transition-colors duration-300
+                        className={`relative font-primary font-[400] text-[18px]  px-2 py-1 flex items-center gap-1 transition-colors duration-300
                         ${
                           isActive
                             ? "text-[#071F45] font-[500]"
-                            : "text-white hover:text-[#071F45]"
+                            : "text-[#071F45] hover:text-[#071F45]"
                         }`}
                       >
                         {nav.title}
@@ -124,11 +123,11 @@ function Header() {
                     key={index}
                     href={nav.url}
                     title={nav.title}
-                    className={`relative font-primary font-[400] text-[18px] px-2 py-1 transition-colors duration-300
+                    className={`relative font-primary font-[400] text-[18px]  px-2 py-1 transition-colors duration-300
                       ${
                         isActive
                           ? "text-[#071F45] font-[500]"
-                          : "text-white hover:text-[#071F45]"
+                          : "text-[#071F45] hover:text-[#071F45]"
                       }`}
                   >
                     {nav.title}
@@ -142,16 +141,16 @@ function Header() {
           <div className="navbar__cta-btn hidden lg:block">
             <button
               onClick={handleNavigate}
-              className="text-[16px] bg-[#071F45] py-2 px-6 text-white rounded-full  hover:text-white font-[500] transition duration-300 font-primary"
+              className="text-[16px] bg-[#071F45] py-2 px-6 text-white rounded-full hover:text-white font-[500] transition duration-300 font-primary"
             >
-             contact-us
+              Contact Us
             </button>
           </div>
 
           {/* Mobile Menu Icon */}
           <div className="lg:hidden">
             <button onClick={() => setIsOpen(true)}>
-              <FiMenu size={28} className="text-white" />
+              <FiMenu size={28} className="text-[#071F45]" />
             </button>
           </div>
         </nav>
@@ -159,14 +158,14 @@ function Header() {
 
       {/* Sidebar (Mobile) */}
       <div
-        className={`fixed top-0 right-0 h-full w-full bg-white shadow-lg transform transition-transform duration-500 z-[10000] overflow-y-auto ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 h-screen w-full bg-white shadow-2xl transform transition-transform duration-500 ease-in-out z-[1050] overflow-y-auto ${
+          isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
         <div className="w-full flex justify-between items-center p-4">
           <div className="logo max-w-[120px]">
             <Image
-              src="/assets/logo/header-logo.png"
+              src="/assets/logo/header-logo1.png"
               alt="sino-link-official-logo"
               width={1000}
               height={1000}
@@ -189,7 +188,7 @@ function Header() {
                 <div key={index} className="w-full">
                   <button
                     onClick={() =>
-                      setOpenDropdown(openDropdown === nav.id ? null : nav.id)
+                      setOpenDropdown(openDropdown === index ? null : index)
                     }
                     className={`w-full flex justify-between items-center text-[18px] py-2 transition-colors duration-200
                       ${
@@ -202,14 +201,14 @@ function Header() {
                     <FiChevronDown
                       size={18}
                       className={`transition-transform duration-300 ${
-                        openDropdown === nav.id ? "rotate-180" : ""
+                        openDropdown === index ? "rotate-180" : ""
                       }`}
                     />
                   </button>
 
-                  {openDropdown === nav.id && (
+                  {openDropdown === index && (
                     <ul className="pl-10 flex flex-col gap-2">
-                      {nav.children.slice(0, 5).map((child, idx) => (
+                      {nav.children.map((child, idx) => (
                         <li key={idx}>
                           <Link
                             href={child.path}
@@ -252,7 +251,7 @@ function Header() {
             );
           })}
 
-          {/* CTA */}
+          {/* CTA Button */}
           <div className="w-full flex justify-center mt-6">
             <button
               onClick={handleNavigate}
@@ -262,6 +261,7 @@ function Header() {
             </button>
           </div>
 
+          {/* Social Links */}
           <div className="mt-4 w-full flex items-center justify-center">
             <SocialMediaLinks />
           </div>
@@ -272,7 +272,7 @@ function Header() {
       {isOpen && (
         <div
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 bg-black/40 z-[9999]"
+          className="fixed inset-0 z-[9999]"
         ></div>
       )}
     </header>
