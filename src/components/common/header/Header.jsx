@@ -35,7 +35,7 @@ function Header() {
 
   return (
     <header
-      className={`header w-full fixed top-0 left-0 z-[999] transition-all duration-500 
+      className={`header w-full fixed top-0 left-0 z-999 transition-all duration-500 
         ${
           isScrolled
             ? "backdrop-blur-md border-b border-gray-200 shadow-sm"
@@ -70,10 +70,10 @@ function Header() {
                   return (
                     <div key={index + "nav-parent"} className="relative group">
                       <button
-                        className={`relative font-primary font-[400] text-[18px]  px-2 py-1 flex items-center gap-1 transition-colors duration-300
+                        className={`relative font-primary font-normal text-[18px]  px-2 py-1 flex items-center gap-1 transition-colors duration-300
                         ${
                           isActive
-                            ? "text-[#071F45] font-[500]"
+                            ? "text-[#071F45] font-medium"
                             : "text-[#071F45] hover:text-[#071F45]"
                         }`}
                       >
@@ -85,7 +85,7 @@ function Header() {
                       </button>
 
                       {/* Dropdown */}
-                      <div className="absolute top-[60px] left-[-130px] w-[500px] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[999] rounded-xl">
+                      <div className="absolute top-[60px] left-[-130px] w-[500px] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-999 rounded-xl">
                         <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-2 px-4 py-4">
                           {nav.children.map((child, idx) => (
                             <li key={idx}>
@@ -94,7 +94,7 @@ function Header() {
                                 className={`block text-[16px] font-primary transition-colors duration-200
                                   ${
                                     pathname === child.path
-                                      ? "text-[#071F45] font-[500]"
+                                      ? "text-[#071F45] font-medium"
                                       : "text-gray-800 hover:text-[#071F45]"
                                   }`}
                               >
@@ -107,7 +107,7 @@ function Header() {
                           <Link
                             href={nav.url}
                             title={nav.title}
-                            className="text-[14px] text-[#071F45] font-[500] hover:underline"
+                            className="text-[14px] text-[#071F45] font-medium hover:underline"
                           >
                             View all {nav.title}
                           </Link>
@@ -123,10 +123,10 @@ function Header() {
                     key={index}
                     href={nav.url}
                     title={nav.title}
-                    className={`relative font-primary font-[400] text-[18px]  px-2 py-1 transition-colors duration-300
+                    className={`relative font-primary font-normal text-[18px]  px-2 py-1 transition-colors duration-300
                       ${
                         isActive
-                          ? "text-[#071F45] font-[500]"
+                          ? "text-[#071F45] font-medium"
                           : "text-[#071F45] hover:text-[#071F45]"
                       }`}
                   >
@@ -141,7 +141,7 @@ function Header() {
           <div className="navbar__cta-btn hidden lg:block">
             <button
               onClick={handleNavigate}
-              className="text-[16px] bg-[#071F45] py-2 px-6 text-white rounded-full hover:text-white font-[500] transition duration-300 font-primary"
+              className="text-[16px] bg-[#071F45] py-2 px-6 text-white rounded-full hover:text-white font-medium transition duration-300 font-primary"
             >
               Contact Us
             </button>
@@ -158,7 +158,7 @@ function Header() {
 
       {/* Sidebar (Mobile) */}
       <div
-        className={`fixed top-0 right-0 h-screen w-full bg-white shadow-2xl transform transition-transform duration-500 ease-in-out z-[1050] overflow-y-auto ${
+        className={`fixed top-0 right-0 h-screen w-full bg-white shadow-2xl transform transition-transform duration-500 ease-in-out z-1050 overflow-y-auto ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
@@ -193,7 +193,7 @@ function Header() {
                     className={`w-full flex justify-between items-center text-[18px] py-2 transition-colors duration-200
                       ${
                         isActive
-                          ? "text-[#071F45] font-[500]"
+                          ? "text-[#071F45] font-medium"
                           : "text-black hover:text-[#071F45]"
                       }`}
                   >
@@ -223,7 +223,7 @@ function Header() {
                         <Link
                           href={nav.url}
                           onClick={() => setIsOpen(false)}
-                          className="block text-[16px] py-2 text-[#071F45] font-[500]"
+                          className="block text-[16px] py-2 text-[#071F45] font-medium"
                         >
                           View all {nav.title}
                         </Link>
@@ -239,10 +239,10 @@ function Header() {
                 key={index}
                 href={nav.url}
                 onClick={() => setIsOpen(false)}
-                className={`font-primary font-[400] text-[18px] py-1 transition-colors duration-300
+                className={`font-primary font-normal text-[18px] py-1 transition-colors duration-300
                   ${
                     isActive
-                      ? "text-[#071F45] font-[500]"
+                      ? "text-[#071F45] font-medium"
                       : "text-black hover:text-[#071F45]"
                   }`}
               >
@@ -255,7 +255,7 @@ function Header() {
           <div className="w-full flex justify-center mt-6">
             <button
               onClick={handleNavigate}
-              className="text-[16px] bg-[#071F45] py-2 px-8 text-white font-[500] rounded-full hover:bg-black hover:text-white transition duration-300"
+              className="text-[16px] bg-[#071F45] py-2 px-8 text-white font-medium rounded-full hover:bg-black hover:text-white transition duration-300"
             >
               Contact Us
             </button>
@@ -272,7 +272,7 @@ function Header() {
       {isOpen && (
         <div
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 z-[9999]"
+          className="fixed inset-0 z-9999"
         ></div>
       )}
     </header>
