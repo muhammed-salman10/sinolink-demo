@@ -3,7 +3,7 @@ import React from "react";
 
 function CtaBanner() {
   return (
-    <section className="relative rounded-3xl overflow-hidden w-[90%] max-w-5xl mx-auto mb-10 h-[300px] sm:h-[350px] md:h-[400px]">
+    <section className="relative rounded-3xl overflow-hidden w-[90%] max-w-5xl mx-auto mb-10 h-[300px] sm:h-[350px] md:h-[400px] mt-12 ">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-[#8fabd7] bg-cover bg-center"

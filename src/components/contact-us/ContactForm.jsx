@@ -5,6 +5,7 @@ import React from "react";
 import { FaLinkedin, FaSquareXTwitter, } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa"; 
 import { FiMail, FiPhoneCall } from "react-icons/fi";
+import CtaBanner from "../common/cta-banner/CtaBanner";
 
 function ContactForm() {
   // 📌 Contact Info
@@ -48,7 +49,7 @@ function ContactForm() {
   ];
 
   return (
-    <section className="lg:py-20 py-10">
+    <section className="lg:mt-10 py-10">
       <div className="container mx-auto px-4">
         <div className="rounded-[40px] overflow-hidden mt-16 flex flex-col lg:gap-40 gap-10 lg:flex-row border border-[#D4E2FF] shadow-lg">
           {/* LEFT */}
@@ -157,6 +158,7 @@ function ContactForm() {
             />
           </div>
         </div>
+       <div className="mt-20"> <CtaBanner/></div>
       </div>
     </section>
   );
