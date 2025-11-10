@@ -1,9 +1,12 @@
 // src/app/blogs/page.jsx
 import React from 'react'
+import Blogs from './Blogs'
 
 function Page() {
   return (
-    <div>Page</div>
+    <div>
+      <Blogs/>
+    </div>
   )
 }
 

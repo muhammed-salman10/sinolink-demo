@@ -1,0 +1,126 @@
+[
+  {
+    "id": 1,
+    "slug": "multi-modal-transport-future",
+    "title": "Multi Modal Transport Future",
+    "description": "In today's fast-paced global trade, businesses need more than just reliable shipping; they need flexible, cost-effective logistics that adapt to changing demands. That's where multi-modal transport comes in. By combining air, sea, and land freight into a single seamless solution, multi-modal transport is reshaping the future of global logistics..",
+    "image": "/assets/images/blogs/blog-6.webp",
+    "tags": [
+      {
+        "name": "Latest",
+        "bg": "#F9F5FF",
+        "text": "#6941C6"
+      },
+      {
+        "name": "Management",
+        "bg": "#F8F9FC",
+        "text": "#363F72"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "customs-brokerage-simplifies-trade",
+    "title": "Customs Brokerage Simplifies Trade",
+    "description": "Global trade is the lifeline of modern business. From electronics and fashion to pharmaceuticals and heavy machinery, products move across continents every second. But behind every smooth shipment lies one of the most complex steps in the supply chain—customs clearance.",
+    "image": "/assets/images/blogs/blog-2.webp",
+    "tags": [
+      {
+        "name": "Product",
+        "bg": "#F0F9FF",
+        "text": "#026AA2"
+      },
+      {
+        "name": "Research",
+        "bg": "#EEF4FF",
+        "text": "#3538CD"
+      },
+      {
+        "name": "Customer Success",
+        "bg": "#FFF6ED",
+        "text": "#C4320A"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "warehousing-supply-chain-management",
+    "title": "Warehousing Supply Chain Management",
+    "description": "In today's fast-moving global economy, businesses must deliver products quickly, safely, and cost-effectively. A strong supply chain makes this possible—and at the heart of every efficient supply chain lies warehousing.",
+    "image": "/assets/images/blogs/blog-8.webp",
+    "tags": [
+      {
+        "name": "Latest",
+        "bg": "#F9F5FF",
+        "text": "#6941C6"
+      },
+      {
+        "name": "Research",
+        "bg": "#EEF4FF",
+        "text": "#3538CD"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "temperature-controlled-logistics",
+    "title": "Temperature Controlled Logistics",
+    "description": "In today's interconnected world, the demand for safe and reliable transportation of temperature-sensitive goods has never been higher. From life-saving pharmaceuticals to premium perishable foods, the ability to maintain a consistent, regulated environment throughout the supply chain is essential for product integrity and regulatory compliance.",
+    "image": "/assets/images/blogs/blog-4.webp",
+    "tags": [
+      {
+        "name": "Latest",
+        "bg": "#F9F5FF",
+        "text": "#6941C6"
+      },
+      {
+        "name": "Research",
+        "bg": "#EEF4FF",
+        "text": "#3538CD"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "future-of-air-freight",
+    "title": "Future Of Air Freight",
+    "description": "Air freight has become the backbone of modern global trade, offering unmatched speed, reliability, and connectivity. As businesses face increasing demands for fast deliveries, precise timing, and international reach, air freight stands out as the solution that keeps supply chains moving.",
+    "image": "/assets/images/blogs/blog-3.webp",
+    "tags": [
+      {
+        "name": "World",
+        "bg": "#ECFDF3",
+        "text": "#027A48"
+      },
+      {
+        "name": "Logistics",
+        "bg": "#FDF2FA",
+        "text": "#C11574"
+      },
+      {
+        "name": "Customer Success",
+        "bg": "#FFF1F3",
+        "text": "#C4320A"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "sea-freight",
+    "title": "Sea Freight",
+    "description": "Sea freight remains one of the most efficient and economical ways to move goods across the globe. Whether it's large-scale industrial machinery, temperature-sensitive perishables, or hazardous materials, Maxplus Worldwide Logistics Solutions LLC ensures your cargo reaches its destination safely, on time, and within budget.",
+    "image": "/assets/images/blogs/blog-7.webp",
+    "tags": [
+      {
+        "name": "Latest",
+        "bg": "#F9F5FF",
+        "text": "#6941C6"
+      },
+      {
+        "name": "Management",
+        "bg": "#F8F9FC",
+        "text": "#363F72"
+      }
+    ]
+  }
+]
