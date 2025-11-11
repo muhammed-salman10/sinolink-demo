@@ -4,6 +4,8 @@ import OurClients from './OurClients'
 import Commitments from './Commitments'
 import Services from './Services'
 import Faq from './Faq'
+import Testimonials from './Testimonials'
+import CtaBanner from '../common/cta-banner/CtaBanner'
 
 function Home() {
   return (
@@ -13,6 +15,8 @@ function Home() {
       <Commitments/>
       <Services/>
       <Faq/>
+      <Testimonials/>
+      <CtaBanner/>
     </div>
   )
 }
