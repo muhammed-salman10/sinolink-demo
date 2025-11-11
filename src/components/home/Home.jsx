@@ -6,11 +6,13 @@ import Services from './Services'
 import Faq from './Faq'
 import Testimonials from './Testimonials'
 import CtaBanner from '../common/cta-banner/CtaBanner'
+import About from './About'
 
 function Home() {
   return (
     <div>
       <Hero/>
+      <About/>
       <OurClients/>
       <Commitments/>
       <Services/>
