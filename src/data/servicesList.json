@@ -1,0 +1,243 @@
+[
+  {
+    "id": 1,
+    "slug": "sea-freight",
+    "metaTitle": "Maxplus Sea Freight | Reliable Global Ocean Cargo Shipping",
+    "metaDesc": "Ship cargo safely with Maxplus Sea Freight. We offer secure, cost-effective, and timely ocean freight solutions across industries. Contact us today to ship.",
+    "title": "Sea Freight",
+    "image": "/assets/images/services/sea-freight.webp",
+    "shortDescription": "Cost-effective ocean shipping for all cargo types and destinations.",
+    "whyChoose": "With extensive experience in global sea freight, Maxplus ensures your cargo—whether general, temperature-controlled, or dangerous goods—reaches its destination securely and on schedule. Our partnerships with major shipping lines allow us to offer competitive rates, flexible scheduling, and customized solutions for every shipment.",
+    "benefitDescription": "Comprehensive FCL and LCL services with competitive rates, flexible schedules, and expert handling for all cargo types. Designed for smooth, dependable international shipping.",
+    "benefits": [
+      "FCL and LCL shipping to all major ports.",
+      "Special rates with leading shipping lines.",
+      "Expertise in break bulk and roll-on/roll-off cargo.",
+      "Ship chartering options for specialized needs.",
+      "Efficient port handling with minimal layovers."
+    ],
+    "span": "sm:row-span-2",
+    "faqData": [
+      {
+        "question": "Do you provide both import and export sea freight?",
+        "answer": "Yes. We offer sea import and export for general, temperature-controlled, and dangerous goods."
+      },
+      {
+        "question": "What container options are available?",
+        "answer": "We provide FCL, LCL, and specialized containers for sensitive or oversized cargo."
+      },
+      {
+        "question": "How do you maintain cargo safety in sea transport?",
+        "answer": "We work with leading shipping lines, ensure secure loading, and use protective packaging."
+      },
+      {
+        "question": "Do you offer temperature monitoring for sea cargo?",
+        "answer": "Yes. We use data loggers for precise temperature control throughout transit."
+      },
+      {
+        "question": "Can you handle dangerous goods at sea?",
+        "answer": "Yes. We comply with IMO regulations for hazardous shipments."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "air-freight",
+    "metaTitle": "Maxplus Air Freight | Fast, Secure & Flexible Cargo Services",
+    "metaDesc": "Experience fast and secure air freight with Maxplus. Enjoy global reach, efficient handling, and timely delivery for all cargo sizes. Book your shipment today.",
+    "title": "Air Freight",
+    "image": "/assets/images/services/air-freight.webp",
+    "shortDescription": "Fast, secure, and precise delivery for urgent and sensitive shipments to destinations worldwide.",
+    "whyChoose": "Maxplus delivers fast, secure, and efficient air cargo solutions for all shipment types—from urgent general goods to sensitive pharmaceutical products. With access to premium air carriers, we ensure on-time delivery, specialized handling, and compliance with regulatory requirements at every stage.",
+    "benefitDescription": "Fast, secure, and efficient delivery of urgent shipments worldwide, with specialized handling for temperature-sensitive and high-value cargo. Compliance and precision at every stage.",
+    "benefits": [
+      "Import and export services for general, temperature-controlled, and dangerous goods.",
+      "Temperature-controlled air import clearance at Dubai Flower Center.",
+      "Regulatory inspection support with MOH and Dubai Municipality.",
+      "Global network for quick, cost-effective air freight solutions.",
+      "Secure handling for high-value and sensitive shipments."
+    ],
+    "faqData": [
+      {
+        "question": "What types of cargo can Maxplus transport by air?",
+        "answer": "We handle general cargo, temperature-controlled goods with data loggers, and dangerous goods in compliance with IATA standards."
+      },
+      {
+        "question": "Do you offer import and export air freight?",
+        "answer": "Yes. We manage both air imports and exports, including clearance for temperature-controlled goods at Dubai Flower Center."
+      },
+      {
+        "question": "How does Maxplus ensure the safety of air shipments?",
+        "answer": "We use specialized packaging, data monitoring, and work only with trusted airline partners to ensure your cargo arrives safely."
+      },
+      {
+        "question": "Can you assist with inspections for air cargo?",
+        "answer": "Yes. We coordinate Ministry of Health and Dubai Municipality inspections when required, especially for temperature-sensitive goods."
+      },
+      {
+        "question": "Do you offer urgent air freight solutions?",
+        "answer": "Yes. We can arrange priority handling and, if needed, charter flights for time-critical shipments."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "land-freight",
+    "metaTitle": "Maxplus Land Freight | Reliable Road Transport Solutions",
+    "metaDesc": "Move cargo with Maxplus land freight services. We provide safe, flexible, and timely cross-border trucking solutions worldwide. Book your shipment today.",
+    "title": "Land Freight",
+    "image": "/assets/images/services/land-freight.webp",
+    "shortDescription": "Reliable GCC and domestic road transport for every cargo type.",
+    "whyChoose": "Maxplus offers dependable land freight services across Oman, Saudi Arabia, Qatar, Kuwait, and Bahrain. With a modern fleet and skilled drivers, we ensure secure, on-time deliveries for both full truckload (FTL) and less-than-truckload (LTL) shipments, including refrigerated transport.",
+    "benefitDescription": "Dependable GCC and domestic road transport with options for FTL and LTL shipments. Specialized handling for perishables, hazardous goods, and cross-border clearances.",
+    "benefits": [
+      "Wide GCC coverage with cross-border expertise.",
+      "FTL and LTL options for all shipment sizes.",
+      "Specialized handling for perishables and hazardous goods.",
+      "Real-time shipment tracking.",
+      "Cost-effective delivery solutions."
+    ],
+    "span": "sm:row-span-2",
+    "faqData": [
+      {
+        "question": "Which countries do you cover for GCC land transport?",
+        "answer": "We provide road freight to Oman, Saudi Arabia, Qatar, Kuwait, and Bahrain."
+      },
+      {
+        "question": "Do you offer temperature-controlled trucking?",
+        "answer": "Yes. Our fleet is equipped for temperature-sensitive cargo with MOH compliance."
+      },
+      {
+        "question": "Can you assist with border clearances?",
+        "answer": "Yes. We specialize in Sila and Hatta borders with fast-track clearance."
+      },
+      {
+        "question": "How do you ensure safe road transport?",
+        "answer": "We use modern vehicles, GPS tracking, and experienced drivers."
+      },
+      {
+        "question": "Do you handle partial and full truckloads?",
+        "answer": "Yes. We offer both LTL and FTL options."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "packing-crafting",
+    "metaTitle": "Maxplus Packing & Crafting | Expert Cargo Protection Services",
+    "metaDesc": "Protect your cargo with Maxplus packing and crating. Export-compliant, secure, and custom-fit. Request our packing service today.",
+    "title": "Packing & Crafting",
+    "image": "/assets/images/services/packing.webp",
+    "shortDescription": "Custom protection for cargo in transit",
+    "whyChoose": "Maxplus provides professional packing and crating solutions designed to safeguard cargo during handling and transit. Our custom-built crates and protective materials meet global shipping standards, reducing damage risk and ensuring goods arrive at their destination in perfect condition, no matter the journey.",
+    "benefitDescription": "Custom-built crates and protective packing for secure transit. Designed for fragile, high-value, and export-compliant shipments.",
+    "benefits": [
+      "Custom-built crates",
+      "Fragile goods expertise",
+      "Damage prevention",
+      "Export compliance"
+    ],
+    "faqData": [
+      {
+        "question": "What materials do you use?",
+        "answer": "We use high-quality ISPM-certified wood, foam, and protective wraps to ensure cargo remains safe during transit. Our materials meet international export compliance standards."
+      },
+      {
+        "question": "Do you offer custom crate sizes?",
+        "answer": "Yes. Every crate is designed to fit the exact dimensions of your cargo, providing maximum protection and stability during shipping."
+      },
+      {
+        "question": "Can you pack fragile goods?",
+        "answer": "Yes. We specialize in packaging delicate, high-value, and sensitive items using advanced cushioning and protective techniques."
+      },
+      {
+        "question": "Are your crates export-compliant?",
+        "answer": "Absolutely. All our crates meet ISPM-15 export regulations, ensuring smooth customs clearance worldwide."
+      },
+      {
+        "question": "Do you offer on-site packing?",
+        "answer": "Yes. Our team can perform packing and crating directly at your location, minimizing the risk of damage during pre-shipment handling."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "contract-logistics",
+    "metaTitle": "Maxplus Contract Logistics | End-to-End Supply Solutions",
+    "metaDesc": "Optimize operations with Maxplus contract logistics. From storage to distribution, we deliver seamless supply chain solutions. Contact our experts today.",
+    "title": "Contract Logistics",
+    "image": "/assets/images/services/contract.webp",
+    "shortDescription": "End-to-end supply chain partnerships.",
+    "whyChoose": "We offer long-term logistics partnerships combining warehousing, transportation, and distribution. Maxplus tailors solutions to your business, ensuring efficiency, scalability, and reliability. Our integrated approach streamlines supply chains, reduces costs, and provides consistent performance for sustainable growth and customer satisfaction.",
+    "benefitDescription": "End-to-end supply chain management with scalable, integrated solutions. Improving efficiency, reducing costs, and ensuring consistent performance.",
+    "benefits": [
+      "Tailored solutions",
+      "Integrated services",
+      "Scalable operations",
+      "Cost efficiency"
+    ],
+    "span": "sm:row-span-2",
+    "faqData": [
+      {
+        "question": "What is contract logistics?",
+        "answer": "Contract logistics is the outsourcing of your company’s supply chain operations to a dedicated logistics partner like Maxplus. This includes transportation, warehousing, distribution, and inventory management."
+      },
+      {
+        "question": "Do you offer sector-specific solutions?",
+        "answer": "Yes. We customize our services to fit the needs of different industries, including retail, manufacturing, and perishables."
+      },
+      {
+        "question": "Can you scale services?",
+        "answer": "Absolutely. We adjust our operations to meet seasonal or market-driven demand changes without compromising service quality."
+      },
+      {
+        "question": "Do you integrate with client systems?",
+        "answer": "Yes. We integrate seamlessly with your existing systems for smooth order processing, tracking, and reporting."
+      },
+      {
+        "question": "How do you improve cost efficiency?",
+        "answer": "We streamline logistics processes, leverage bulk transport rates, and optimize routes to reduce costs while maintaining reliability."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "shipping-agents",
+    "metaTitle": "Maxplus Shipping Agents | Reliable Global Port Services",
+    "metaDesc": "Maxplus acts as trusted shipping agents, ensuring smooth, compliant, and efficient cargo handling at ports worldwide. Partner with us for shipping today.",
+    "title": "Shipping Agents",
+    "image": "/assets/images/services/shipping.webp",
+    "shortDescription": "Efficient vessel and port operations.",
+    "whyChoose": "Maxplus provides efficient vessel and port services across the UAE. We handle quick clearance, cargo documentation, and coordination with authorities to ensure smooth port operations. Our team supports crew changes, supply arrangements, and ensures vessels are turned around without unnecessary delays.",
+    "benefitDescription": "Efficient vessel and port services, including clearance, crew changes, and cargo coordination. 24/7 support for smooth port operations.",
+    "benefits": [
+      "Fast vessel clearance",
+      "Port coordination",
+      "Crew assistance",
+      "24/7 coverage"
+    ],
+    "span": "sm:row-span-2",
+    "faqData": [
+      {
+        "question": "Which ports do you serve?",
+        "answer": "We operate across all major UAE ports, including Jebel Ali, Khalifa, Sharjah, and Fujairah, ensuring full coverage for vessel arrivals and departures."
+      },
+      {
+        "question": "Do you provide vessel clearance?",
+        "answer": "Yes. We manage all clearance formalities, ensuring quick turnaround and minimizing port delays."
+      },
+      {
+        "question": "Can you assist with crew changes?",
+        "answer": "Absolutely. We coordinate immigration, transport, and accommodation for crew members, ensuring seamless transitions."
+      },
+      {
+        "question": "Do you support emergency services?",
+        "answer": "Yes. Our dedicated port operations team is available 24/7 to respond to urgent vessel requirements or unexpected issues."
+      },
+      {
+        "question": "Do you coordinate with port authorities?",
+        "answer": "Yes. We maintain close working relationships with port officials to ensure smooth communication and efficient vessel handling."
+      }
+    ]
+  }
+]
