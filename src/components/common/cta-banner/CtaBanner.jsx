@@ -22,9 +22,15 @@ function CtaBanner() {
         </h2>
 
         <p className="mt-2  text-[18px]  md:text-[22px] text-[#f0f6ff]/90 drop-shadow text-center md:text-left">
-          Lorem Ipsum has been the industrys standard dummy text ever since the
-          1500s
+          Stay connected with Sinolink and get the latest logistics insights,
+          updates, and shipping solutions straight to your inbox
         </p>
+        {/* button */}
+        <div className="flex justify-center mt-6 lg:justify-start">
+          <button className="bg-[#071F45] text-white text-sm md:text-base font-medium px-5 py-2 rounded-lg shadow-md hover:bg-[#0b2d60] transition-all duration-300">
+            Get in touch
+          </button>
+        </div>
       </div>
     </section>
   );

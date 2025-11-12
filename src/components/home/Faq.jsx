@@ -5,57 +5,69 @@ import { Plus, Minus } from "lucide-react";
 const faqs = [
   {
     id: 1,
-    question: "Lorem ipsum dolor sit amet consectetur. Sagittis id.",
+    question: "What Service does SinoLink Logistics provide?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus ultrices. Ac pharetra ultricies consectetur consequat tellus massa. Nec aliquam eros sagittis duis sed euismod arcu hac. Ornare amet ligula ornare lacus aliquam aenean. Eu lacus imperdiet urna amet congue adipiscing. Faucibus magna nisl ullamcorper in facilisis consequat aliquam."
+      "we offer sea, air and land freight services, including customs clearance, warehousing, cargo consolidation, and door-door delivery. ",
   },
   {
     id: 2,
-    question: "Lorem ipsum dolor sit amet consectetur. Viverra.",
+    question: "Do you handle both import and export shipments?",
     answer:
-      "Curabitur gravida arcu Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus ultrices. Ac pharetra ultricies ac tortor dignissim Lorem ipsum dolor sit amet consectetur. In augue ipsum tellus ultrices. Ac pharetra ultricies convallis. Phasellus vestibulum lorem sed risus ultricies."
+      "Yes. We manage both import and export shipments from China to the Middle East, Africa and Asia. ",
   },
   {
     id: 3,
-    question: "Lorem ipsum dolor sit amet consectetur. Viverra.",
+    question: "What is the difference between FCL & LCL ?",
     answer:
-      "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    " FCL (Full Container Load) : A full container for your goods only. LCL (Less than Container Load) : Your goods share space in a container with others - ideal for small shipments. "
   },
   {
     id: 4,
-    question: "Lorem ipsum dolor sit amet consectetur. Viverra.",
+    question: "How long does shipment from China take? ",
     answer:
-      "Integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor."
+    ". Middle East - 18-25 days. Africa: 25-40 days. Asia : 7 - 15 days "
   },
   {
     id: 5,
-    question: "Lorem ipsum dolor sit amet consectetur. Viverra.",
+    question: "Can u arrange pickup from multiple suppliers ? ",
     answer:
-      "Et tortor at risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi."
-  }
+    "Yes. we can collect goods from different suppliers across major cities like Guanzhou,Yiwu and Shanghai. "
+  },
+  {
+    id: 6,
+    question: "Do you provide door - to- door services ? ",
+    answer:
+    "Yes. we take care of the full process - from supplier pickup to delivery and your destination"
+  },
+  {
+    id: 7,
+    question: "Can i track Shipment ?  ",
+    answer:
+    "Yes. you will receive regular tracking updates by email or WhatsApp."
+  },
 ];
 
 function Faq() {
-const [activeId, setActiveId] = useState();
+  const [activeId, setActiveId] = useState();
 
   const toggleFAQ = (id) => {
     setActiveId(activeId === id ? null : id);
   };
 
   return (
-   <section
+    <section
       className="relative w-full min-h-screen flex flex-col justify-center items-center px-4 lg:py-20 text-white mb-10 mt-10 lg:mt-0"
       style={{
         backgroundImage: `url('/assets/images/home/faq.webp')`, // your background image path
         backgroundSize: "cover",
-        backgroundPosition: "center"
+        backgroundPosition: "center",
       }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#081733]/90 "></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-3xl w-full lg:mt-10">
+      <div className="relative z-10 max-w-3xl w-full lg:mt-10 py-10 lg:py-0">
         <h2 className="text-2xl md:text-4xl font-bold text-center mb-8">
           FREQUENTLY ASKED <span className="text-blue-300">QUESTIONS</span>
         </h2>

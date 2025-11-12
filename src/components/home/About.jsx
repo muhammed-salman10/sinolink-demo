@@ -2,6 +2,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function About() {
   // All image data: src, position, size, and shape
@@ -98,7 +99,12 @@ function About() {
               Have any questions?{" "}
               <span className="text-white font-medium">Contact us!</span>
             </p>
-            <p className="font-semibold text-lg">+996 (4343) 4325665</p>
+            <Link
+              href="tel:+8619925880257"
+              className="font-semibold text-lg hover:underline"
+            >
+              +86 199 2588 0257
+            </Link>
           </div>
         </div>
       </div>

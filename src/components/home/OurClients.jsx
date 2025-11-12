@@ -29,9 +29,9 @@ function OurClients() {
         <div className="max-w-[800px] mx-auto text-center">
           <h3 className="text-3xl md:text-4xl font-bold mb-4">Our Clients</h3>
           <p className=" leading-relaxed">
-            Wisdom new and valley answer. Contented it so is discourse
-            recommend. Man its upon him call mile. An pasture he himself believe
-            Ferrars besides cottage.
+            We’re proud to partner with leading businesses across the globe who
+            trust Sinolink for reliable, on-time logistics solutions. Together,
+            we keep the world moving with precision and care
           </p>
         </div>
         {/* cards */}
