@@ -15,17 +15,15 @@ function MissionAndVision() {
               our vision
             </span>
             <h3 className="text-[24px] lg:text-[30px]  mt-2 md:mt-4 max-w-md font-[500]">
-              Shaping the Future of Global Logistics
+              Building a Smarter, Connected Logistics Future
             </h3>
             <p className="text-[18px] lg:text-[22px] md:text-[12px] font-[400] font-secondary mt-3 ">
-              To be recognized as a leading global logistics partner that not
-              only moves cargo but drives business success. We envision a future
-              where Maxplus sets the standard for reliability, innovation, and
-              sustainability in the logistics industry creating seamless
-              connections between businesses and markets worldwide. By combining
-              advanced technology, strategic networks, and a customer-first
-              approach, we aim to make global trade faster, safer, and more
-              efficient for every client we serve.
+              To become a globally recognized logistics brand from China, known
+              for reliability, innovation, and customer trust — bridging
+              continents through excellence in freight forwarding and supply
+              chain management,extends beyond transportation — we aim to empower
+              global trade with smarter, faster, and more sustainable logistics
+              solutions. By combining technology, transparency, and teamwork.
             </p>
           </div>
 
@@ -62,17 +60,16 @@ function MissionAndVision() {
               our mission
             </span>
             <h3 className="text-[24px] lg:text-[30px] md:text-[22px] text-black mb-3 md:mb-4 max-w-md font-[500]">
-              Delivering Excellence, One Shipment at a Time
+             Committed to Excellence in Every Delivery
             </h3>
             <p className="text-[18px] lg:text-[22px] md:text-[12px] font-[400] font-secondary max-w-xl pb-6 md:pb-0">
-              Our mission is to deliver world-class logistics services that
-              empower our customers to thrive in a connected world. We achieve
-              this by offering tailored, end-to-end solutions across air, sea,
-              and land that ensure on-time delivery, regulatory compliance, and
-              complete transparency. Every shipment we handle is backed by our
-              decades of expertise, robust infrastructure, and a dedicated team
-              committed to exceeding expectations. At Maxplus, we measure our
-              success by the growth, trust, and satisfaction of our clients.
+              To simplify global trade by delivering efficient, transparent, and
+              technology-driven logistics solutions that empower businesses to
+              grow across borders.We aim to strengthen partnerships with clients
+              through consistent quality, proactive communication, and a
+              customer-first approach — ensuring every delivery contributes to
+              building a smarter, faster, and more connected global logistics
+              network.
             </p>
           </div>
         </div>

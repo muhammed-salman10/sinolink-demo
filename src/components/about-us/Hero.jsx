@@ -19,17 +19,16 @@ function Hero() {
       {/* Content for desktop/tablet */}
       <div className="container relative z-10 hidden sm:flex justify-between items-center pb-10">
         {/* left-content */}
-        <h1 className="text-white font-[300] text-3xl md:text-[40px] lg:text-[60px] leading-[1.2] drop-shadow-lg">
-          Where does it <br /> come from?
+        <h1 className="text-white font-[300] text-3xl md:text-[40px] lg:text-[50px] font-[400] leading-[1.2] drop-shadow-lg">
+          Connecting Continents. <br /> Delivering Confidence.
         </h1>
 
         {/* right-content */}
         <p className="text-white w-1/2 text-lg lg:text-[22px] md:text-[16px] leading-relaxed font-[400] font-secondary">
-          Since 2005, Maxplus has evolved from a UAE-based logistics provider
-          into a trusted global partner. Our growth is driven by industry
-          expertise, advanced technology, and a strong international network,
-          enabling us to deliver secure, efficient, and timely shipments across
-          air, sea, and land routes.
+          At SinoLink Logistics, we go beyond transportation — we build trusted
+          global connections. Headquartered in China, with a strong presence
+          across the Middle East, Africa, and Asia, we provide smart, scalable
+          logistics solutions that move businesses forward.
         </p>
       </div>
 
