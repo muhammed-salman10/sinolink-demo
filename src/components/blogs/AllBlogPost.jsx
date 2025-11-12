@@ -46,7 +46,7 @@ const AllBlogPost = () => {
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2 group-hover:text-[#FCA213]">
+                <h3 className="text-lg font-semibold mb-2 group-hover:text-[#071F45]">
                   {blog.title}
                 </h3>
                 <p className="font-secondary font-[400] text-gray-600 text-[14px] mb-3 line-clamp-3">
@@ -69,7 +69,7 @@ const AllBlogPost = () => {
         </div>
 
         {/* Pagination */}
-        <div className="flex justify-center items-center gap-3 mt-10 text-[14px] text-black">
+        {/* <div className="flex justify-center items-center gap-3 mt-10 text-[14px] text-black">
           <button
             className="px-3 py-1 rounded hover:bg-[#FCA213] hover:text-white"
             onClick={() => goToPage(currentPage - 1)}
@@ -93,7 +93,7 @@ const AllBlogPost = () => {
           >
             Next
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -36,7 +36,7 @@ function RecentBlogPost() {
                   />
                 </div>
                 <div className="px-4 py-5">
-                  <h3 className="text-[18px] font-semibold flex items-center justify-between group-hover:text-[#FCA213]">
+                  <h3 className="text-[18px] font-semibold flex items-center justify-between group-hover:text-[#071F45]">
                     {blog.title}
                     <span className="text-[12px]">
                       <RxArrowTopRight size={20} />
@@ -84,7 +84,7 @@ function RecentBlogPost() {
               {/* Content */}
               <div className="w-full md:w-1/2 px-4 sm:px-6 md:px-8 lg:px-10 py-5 md:py-3 lg:py-6  ">
                 <div>
-                  <h2 className="text-[16px] sm:text-[18px] md:text-[20px] font-semibold mb-3 group-hover:text-[#FCA213]">
+                  <h2 className="text-[16px] sm:text-[18px] md:text-[20px] font-semibold mb-3 group-hover:text-[#071F45]">
                     {wideBlog.title}
                   </h2>
                   <p className="text-gray-600 text-[14px] sm:text-[14px]  lg:text-[16px] mb-4">
