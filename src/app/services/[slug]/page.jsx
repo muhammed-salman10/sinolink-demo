@@ -105,10 +105,11 @@ export default function ServiceDetailsPage() {
         {service.faqData && service.faqData.length > 0 && (
           <div className="mt-16 max-w-[1000px] mx-auto px-4">
             <h3 className="text-[22px] sm:text-[28px] lg:text-[36px] font-semibold mb-6 text-[#071F45] text-center">
-              Frequently Asked <span className="text-[#B4D1FF]">Questions</span>
+             Have Questions ? We`re here to <span className="text-[#B4D1FF]">help</span>
             </h3>
+            <p className="text-center lg:text-[18px] text-[14px]">Explore our FAQs to understand how we work and what we offer - your smooth logistics journey starts here.</p>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mt-10">
               {service.faqData.map((faq, index) => (
                 <div
                   key={index}

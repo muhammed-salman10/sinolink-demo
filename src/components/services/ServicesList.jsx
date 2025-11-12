@@ -10,13 +10,12 @@ function ServicesList() {
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="mb-10">
-          <h2 className="text-3xl md:text-5xl font-bold text-[#071F45] leading-tight max-w-2xl">
-            Lorem Ipsum is simply dummy text of the printing
+          <h2 className="text-3xl md:text-4xl font-bold text-[#071F45] leading-tight max-w-3xl">
+            Comprehensive Freight Solutions for a Connected World
           </h2>
-          <p className="mt-4 text-gray-600 text-base md:text-lg max-w-3xl leading-relaxed">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry’s standard dummy text
-            ever since the 1500s.
+          <p className="mt-4 text-gray-600 text-base md:text-[22px] max-w-3xl leading-relaxed">
+            From origin to destination, we ensure your shipments arrive safely,
+            on time, and hassle-free .
           </p>
         </div>
 

@@ -24,13 +24,15 @@ function Hero() {
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
             {/* Heading */}
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-              Smart. Swift. <br /> Sino Link.
+              Fast.Reliable. <br /> Sino Link.
             </h1>
 
             {/* Paragraph */}
             <p className="max-w-2xl mt-4 text-sm md:text-[22px] text-gray-200">
-              Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is
-              simply dummy text of the printing Lorem.
+              Experience logistics redefined with Sinolink. From air, sea, and
+              land freight to expert packing and handling, we deliver your cargo
+              with precision, speed, and reliability—connecting businesses
+              worldwide, effortlessly.
             </p>
 
             {/* Button */}

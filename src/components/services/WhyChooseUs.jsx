@@ -20,7 +20,7 @@ function WhyChooseUs() {
       id: 2,
       title: "Global Network",
       description:
-        "With strategic partners and operations in key locations worldwide we connect your business to every corner of the globe with ease and reliability.",
+      "Global Network With strategic hubs across China, the Middle East, Africa, and Asia, we deliver seamless cross-border connectivity and trusted international partnerships.",
       icon: <RiGlobalFill />,
       bgColor: "#071F45", // ✅ Dark Blue
       textColor: "text-white",
@@ -29,7 +29,7 @@ function WhyChooseUs() {
       id: 3,
       title: "On-Time, Every Time",
       description:
-        "Our streamlined processes, experienced team and advanced tracking ensure your shipments move swiftly and arrive exactly when promised.",
+      "On-Time, Every Time We prioritize punctuality through real-time tracking, efficient routing, and dedicated teams focused on keeping your shipments on schedule.",
       icon: <FaClock />,
       bgColor: "#071F45", // ✅ Dark Blue
       textColor: "text-white",
@@ -38,7 +38,7 @@ function WhyChooseUs() {
       id: 4,
       title: "Built for Growth",
       description:
-        "We tailor our logistics solutions to scale with your business supporting your expansion with flexible future-ready services.",
+      "Built for Growth Designed to scale with your business, SinoLink offers flexible logistics solutions that adapt to changing markets and global demand.",
       icon: <BsGraphUp />,
       bgColor: "#B4D1FF", // ✅ Light Blue
       textColor: "text-black",
