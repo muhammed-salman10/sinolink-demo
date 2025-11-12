@@ -2,8 +2,8 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { FaLinkedin, FaSquareXTwitter, } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa"; 
+import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import CtaBanner from "../common/cta-banner/CtaBanner";
 
@@ -14,15 +14,16 @@ function ContactForm() {
       id: 1,
       icon: FiPhoneCall,
       label: "Phone",
-      value: "+91 98765 43210",
-      href: "tel:+919876543210",
+      value: "+86 199 2588 0257",
+      href: "tel:+8619925880257",
     },
+
     {
       id: 2,
       icon: FiMail,
       label: "Email",
-      value: "email@gmail.com",
-      href: "mailto:email@gmail.com",
+      value: "Operations@sinolinkinternational.com",
+      href: "mailto:Operations@sinolinkinternational.com",
     },
   ];
 
@@ -60,8 +61,10 @@ function ContactForm() {
             </h1>
 
             <p className="text-[15px] text-gray-600 mb-10 leading-relaxed ">
-              Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu
-              leo molestie vel, ornare nam id blandit natus.
+              Whether you need a logistics partner, a tailored freight solution,
+              or expert guidance on global shipping — our team is ready to
+              assist you. Fill out the form below or reach us directly through
+              the details provided.
             </p>
 
             {/* contact-form */}
@@ -98,8 +101,8 @@ function ContactForm() {
                 className="w-full border-b border-gray-300 py-3 outline-none focus:border-primary"
               />
               <label className="flex items-start gap-2 text-[14px] text-gray-700">
-                <input type="checkbox" className="mt-1" />
-                I want to protect my data by signing an NDA
+                <input type="checkbox" className="mt-1" />I want to protect my
+                data by signing an NDA
               </label>
               <button
                 type="submit"
@@ -115,12 +118,12 @@ function ContactForm() {
                 <Link
                   key={id}
                   href={href}
-                  className="flex items-center gap-3 text-sm text-black hover:text-blue-600 transition-all"
+                  className="flex items-center gap-3 text-sm text-black hover:text-blue-600 transition-al"
                 >
                   <Icon size={20} className="text-blue-600" />
                   <div>
                     <p className="font-semibold">{label}</p>
-                    <p className="text-gray-600">{value}</p>
+                    <p className="text-gray-600 hover:underline">{value}</p>
                   </div>
                 </Link>
               ))}
@@ -150,7 +153,7 @@ function ContactForm() {
           {/* RIGHT MAP */}
           <div className="lg:w-[35%] w-full relative bg-[#B4D1FF] lg:min-h-[550px] min-h-[450px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97182.59799959969!2d14.366529886624347!3d50.05958563194564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e25fe7306b%3A0x400af0f6615e030!2sPrague%2C%20Czechia!5e0!3m2!1sen!2sus!4v1708870700000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.689922547288!2d113.280637!3d23.125178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3402ffb9a6f2a3c5%3A0x2e4e6e2bdf4a5c1!2sD24%2C%20Building%20D%2C%20Yiyou%20Auto%20Parts%20City%20(Guangyuan%20East)%2C%20Guangzhou%20City%2C%20Guangdong%20Province%2C%20China!5e0!3m2!1sen!2sus!4v1731409800000"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -158,7 +161,10 @@ function ContactForm() {
             />
           </div>
         </div>
-       <div className="mt-20"> <CtaBanner/></div>
+        <div className="mt-20">
+          {" "}
+          <CtaBanner />
+        </div>
       </div>
     </section>
   );
