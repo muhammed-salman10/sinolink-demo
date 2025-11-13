@@ -192,7 +192,7 @@ function Header() {
         <div className="w-full flex justify-between items-center p-4">
           <div className="logo max-w-[120px]">
             <Image
-              src="/assets/logo/header-logo1.png"
+              src="/assets/logo/nav-logo.png"
               alt="sino-link-official-logo"
               width={1000}
               height={1000}

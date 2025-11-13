@@ -14,20 +14,21 @@ function Hero() {
   return (
     <section className="relative w-full lg:h-[90vh] h-[90vh] flex items-center justify-center text-center overflow-hidden">
       {/* Background Image */}
-      <Image
-        src="/assets/images/home/hero.webp"
-        alt="Worldwide Logistics"
-        fill
-        className="object-cover"
-        priority
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="/assets/videos/hero-video.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
       />
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/10" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 text-white lg:mt-10 mt-20">
-        <h4 className="text-sm md:text-[24px] tracking-[4px] mb-3 font-semibold mt-20 lg:mt-10">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 text-white lg:mt-10 ">
+        <h4 className="text-sm md:text-[24px] tracking-[4px] mb-3 font-semibold  lg:mt-10">
           SINOLINK
         </h4>
         <h1 className="text-3xl md:text-5xl font-[500] leading-tight  lg:mb-10 mb-4">
