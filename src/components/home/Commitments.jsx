@@ -9,9 +9,9 @@ function Commitments() {
         <div className="border w-full lg:h-[450px] h-full bg-[#071F45] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-10 lg:py-30">
           {/* Left Content */}
           <div className="lg:w-1/2 text-center md:text-left space-y-6 pb-10 lg:pb-0">
-            <h1 className="text-2xl md:text-4xl font-extrabold leading-tight text-white">
+            <h6 className="text-2xl md:text-4xl font-extrabold leading-tight text-white">
               Global Logistcs, Smart. <br /> Fast. Reliable.
-            </h1>
+            </h6>
             <p className="text-white text-[16px] md:text-[20px]">
               At SinoLink Logistics, we provide fast, reliable, efficient and
               cost effective freight soulutions world wide. Our extensive
