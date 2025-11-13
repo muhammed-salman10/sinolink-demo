@@ -6,14 +6,14 @@ import services from "@/src/data/servicesList.json"; // ✅ correct path
 
 function ServicesList() {
   return (
-    <section className="py-20 bg-white">
+    <section className="lg:py-16 bg-white">
       <div className="container mx-auto px-4">
         {/* Heading */}
         <div className="mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#071F45] leading-tight max-w-3xl">
+          <h2 className="text-[20px] md:text-4xl font-bold text-[#071F45] leading-tight max-w-3xl text-center lg:text-left">
             Comprehensive Freight Solutions for a Connected World
           </h2>
-          <p className="mt-4 text-gray-600 text-base md:text-[22px] max-w-3xl leading-relaxed">
+          <p className="mt-4 text-gray-600 text-base md:text-[22px] max-w-3xl leading-relaxed text-center lg:text-left">
             From origin to destination, we ensure your shipments arrive safely,
             on time, and hassle-free .
           </p>

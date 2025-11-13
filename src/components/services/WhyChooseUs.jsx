@@ -50,7 +50,7 @@ function WhyChooseUs() {
       <div className="why-choose__container container">
         {/* Title */}
         <div className="why-choose__title">
-          <h4 className="font-primary text-[30px] lg:text-5xl md:text-[55px] text-black font-[600] md:text-start text-center leading-[1.12] lg:mb-6">
+          <h4 className="font-primary text-[24px] lg:text-5xl md:text-[55px] text-black font-[600] md:text-start text-center leading-[1.12] lg:mb-6 mt-10 lg:mt-0">
             Where Reliability <br />
             Meets Global Reach.
           </h4>

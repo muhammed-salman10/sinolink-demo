@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import blogDetails from "@/src/data/blogDetails";
 import { RxArrowTopRight } from "react-icons/rx";
+import CtaBanner from "@/src/components/common/cta-banner/CtaBanner";
 
 function Page() {
   const { slug } = useParams();
@@ -13,13 +14,13 @@ function Page() {
   if (!blog) return <p className="text-center py-20">Blog not found</p>;
 
   return (
-    <section className="md:py-10 md:mt-20 mt-10">
+    <section className="md:py-10 lg:mt-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:mb-14">
 
           {/* ARTICLE */}
           <article className="md:col-span-8 order-1 md:order-2">
-            <h1 className="text-[20px] lg:text-[34px] font-[600] leading-tight mt-10 md:mt-0">
+            <h1 className="text-[20px] lg:text-[32px] font-[600] leading-tight mt-10 md:mt-0">
               {blog.title}
             </h1>
 
@@ -97,6 +98,7 @@ function Page() {
             ))}
           </aside>
         </div>
+        <CtaBanner/>
       </div>
     </section>
   );

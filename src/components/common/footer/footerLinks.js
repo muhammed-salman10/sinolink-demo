@@ -9,30 +9,23 @@ const footerNavLinks = {
       path: "/blogs",
     },
     {
-      title: "Careers",
+      title: "Contact Us  ",
       path: "/careers",
     },
   ],
   services: [
     {
-      title: "Air Freight",
-      path: "/services/air-freight",
-    },
-    {
       title: "Sea Freight",
       path: "/services/sea-freight",
     },
     {
+      title: "Air Freight",
+      path: "/services/air-freight",
+    },
+    
+    {
       title: "Land Freight",
       path: "/services/land-freight",
-    },
-    {
-      title: "Auto Logistics",
-      path: "/services/auto-logistics",
-    },
-    {
-      title: "Multimodal Transport",
-      path: "/services/multimodal-transport",
     },
     {
       title: "View All Services",
@@ -44,11 +37,6 @@ const footerNavLinks = {
       title: "About Us",
       path: "/company/about-us",
     },
-    {
-      title: "Testimonials",
-      path: "/testimonials",
-    },
-
     {
       title: "Contact Us",
       path: "/contact",

@@ -3,8 +3,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function About() {
+  const router = useRouter();
+  const handleExplore = () => router.push("/company/about-us");
+  const handleContact = () => router.push("/contact-us");
+
   // All image data: src, position, size, and shape
   const collageImages = [
     {
@@ -86,10 +91,16 @@ function About() {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-10 justify-center lg:justify-start">
-            <button className="bg-[#6BA7FF] hover:bg-[#5594F5] text-white font-semibold py-3 px-6 rounded-lg transition">
+            <button
+              onClick={handleExplore}
+              className="bg-[#6BA7FF] hover:bg-[#5594F5] text-white font-semibold md:py-3 py-2 md:px-6 px-4 rounded-lg transition lg:text-[16px] text-[14px]"
+            >
               Explore more
             </button>
-            <button className="bg-white hover:bg-gray-200 text-[#071F45] font-semibold py-3 px-6 rounded-lg transition">
+            <button
+              onClick={handleContact}
+              className="bg-white hover:bg-gray-200 text-[#071F45] font-semibold md:py-3 py-2 md:px-6 px-4 rounded-lg transition lg:text-[16px] text-[14px]"
+            >
               Contact us
             </button>
           </div>

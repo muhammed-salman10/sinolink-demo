@@ -19,9 +19,9 @@ function Commitments() {
               air,sea and land - connecting China with Middle East, Africa and
               Asia seamlessly
             </p>
-            <button className="bg-[#B4D1FF]  text-[#071F45] transition-all font-semibold px-4 py-2 rounded-lg shadow-md">
+            {/* <button className="bg-[#B4D1FF]  text-[#071F45] transition-all font-semibold px-4 py-2 rounded-lg shadow-md">
               Learn more
-            </button>
+            </button> */}
           </div>
 
           {/* Right Image */}

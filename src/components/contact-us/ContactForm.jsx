@@ -50,13 +50,13 @@ function ContactForm() {
   ];
 
   return (
-    <section className="lg:mt-10 py-10">
+    <section className=" lg:py-10 mb-10 lg:mb-0">
       <div className="container mx-auto px-4">
         <div className="rounded-[40px] overflow-hidden mt-16 flex flex-col lg:gap-40 gap-10 lg:flex-row border border-[#D4E2FF] shadow-lg">
           {/* LEFT */}
           <div className="lg:w-[65%] w-full bg-white p-10 lg:p-14">
             {/* heading + content */}
-            <h1 className="text-[32px] md:text-[36px] font-extrabold text-black mb-3">
+            <h1 className="text-[24px] md:text-[36px] font-extrabold text-black mb-3">
               Get in touch
             </h1>
 
@@ -153,17 +153,13 @@ function ContactForm() {
           {/* RIGHT MAP */}
           <div className="lg:w-[35%] w-full relative bg-[#B4D1FF] lg:min-h-[550px] min-h-[450px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.689922547288!2d113.280637!3d23.125178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3402ffb9a6f2a3c5%3A0x2e4e6e2bdf4a5c1!2sD24%2C%20Building%20D%2C%20Yiyou%20Auto%20Parts%20City%20(Guangyuan%20East)%2C%20Guangzhou%20City%2C%20Guangdong%20Province%2C%20China!5e0!3m2!1sen!2sus!4v1731409800000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.3212679884655!2d113.2933!3d23.153456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3402ff7bfffffff%3A0x2710i3f994a88ad9e7!2sYiyou%20(Guangyuan%20East)%20Automobile%20Parts%20City%20Unit%20B!5e0!3m2!1sen!2sin!4v1731499800000!5m2!1sen!2sin"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="absolute lg:top-[110px] lg:left-[-120px] lg:w-114 w-full h-full lg:h-[600px]"
-            />
+            ></iframe>
           </div>
-        </div>
-        <div className="mt-20">
-          {" "}
-          <CtaBanner />
         </div>
       </div>
     </section>

@@ -10,13 +10,15 @@ import { useRouter, usePathname } from "next/navigation.js";
 function Header() {
   const router = useRouter();
   const pathname = usePathname();
-  const handleNavigate = () => router.push("/contact-us");
 
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showHeader, setShowHeader] = useState(false);
 
-  // Prevent background scroll when sidebar is open
+  const handleNavigate = () => router.push("/contact-us");
+
+  // ✅ Prevent background scroll when sidebar is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => {
@@ -24,27 +26,49 @@ function Header() {
     };
   }, [isOpen]);
 
-  // Header scroll effect
+  // ✅ Show header only after scroll
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+        setShowHeader(true);
+      } else {
+        setIsScrolled(false);
+        setShowHeader(false);
+      }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // ✅ Close mobile menu and dropdown on route change
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsOpen(false);
+      setOpenDropdown(null);
+    }, 0);
+
+    return () => clearTimeout(timer);
+  }, [pathname]);
+
   return (
     <header
-      className={`header w-full fixed top-0 left-0 z-999 transition-all duration-500 
+      className={`header w-full fixed top-0 left-0 z-[999] transition-all duration-700 ease-in-out 
+        ${
+          showHeader
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-10 pointer-events-none"
+        } 
         ${
           isScrolled
-            ? "backdrop-blur-md border-b border-gray-200 shadow-sm"
+            ? "backdrop-blur-md border-b border-gray-200 shadow-sm bg-white/70"
             : "bg-transparent backdrop-blur-none border-transparent"
         }`}
     >
       <div className="container header__container md:py-4 py-3">
         <nav className="w-full navbar flex justify-between items-center">
-          {/* Logo */}
+          {/* ✅ Logo */}
           <Link
             href="/"
             title="sino-link-official-logo"
@@ -60,9 +84,9 @@ function Header() {
             />
           </Link>
 
-          {/* Desktop Links */}
+          {/* ✅ Desktop Links */}
           <div className="navbar__links hidden lg:flex">
-            <div className="flex justify-center w-full gap-10 relative ">
+            <div className="flex justify-center w-full gap-10 relative">
               {navLinks.map((nav, index) => {
                 const isActive = pathname === nav.url;
 
@@ -70,7 +94,7 @@ function Header() {
                   return (
                     <div key={index + "nav-parent"} className="relative group">
                       <button
-                        className={`relative font-primary font-normal text-[18px]  px-2 py-1 flex items-center gap-1 transition-colors duration-300
+                        className={`relative font-primary font-normal text-[18px] px-2 py-1 flex items-center gap-1 transition-colors duration-300
                         ${
                           isActive
                             ? "text-[#071F45] font-medium"
@@ -85,13 +109,13 @@ function Header() {
                       </button>
 
                       {/* Dropdown */}
-                      <div className="absolute top-[60px] left-[-130px] w-[500px] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-999 rounded-xl">
-                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-2 px-4 py-4">
+                      <div className="absolute top-[60px] left-[-130px] w-[300px] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[999] rounded-xl">
+                        <ul className="grid grid-cols-1 lg:grid-cols-1 gap-x-6 gap-y-2 px-4 py-4">
                           {nav.children.map((child, idx) => (
                             <li key={idx}>
                               <Link
                                 href={child.path}
-                                className={`block text-[16px] font-primary transition-colors duration-200
+                                className={`block text-[16px] px-14 font-primary transition-colors duration-200
                                   ${
                                     pathname === child.path
                                       ? "text-[#071F45] font-medium"
@@ -123,7 +147,7 @@ function Header() {
                     key={index}
                     href={nav.url}
                     title={nav.title}
-                    className={`relative font-primary font-normal text-[18px]  px-2 py-1 transition-colors duration-300
+                    className={`relative font-primary font-normal text-[18px] px-2 py-1 transition-colors duration-300
                       ${
                         isActive
                           ? "text-[#071F45] font-medium"
@@ -137,17 +161,20 @@ function Header() {
             </div>
           </div>
 
-          {/* CTA Button */}
+          {/* ✅ CTA Button */}
           <div className="navbar__cta-btn hidden lg:block">
-            <button
-              onClick={handleNavigate}
-              className="text-[16px] bg-[#071F45] py-2 px-6 text-white rounded-full hover:text-white font-medium transition duration-300 font-primary"
+            <Link
+              href="tel:+8619925880257"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[16px] font-primary bg-primary py-2 px-4 text-white font-[500] rounded-full hover:bg-gray-800 transition duration-300"
+              type="button"
             >
-              Contact Us
-            </button>
+              Get in Touch
+            </Link>
           </div>
 
-          {/* Mobile Menu Icon */}
+          {/* ✅ Mobile Menu Icon */}
           <div className="lg:hidden">
             <button onClick={() => setIsOpen(true)}>
               <FiMenu size={28} className="text-[#071F45]" />
@@ -156,9 +183,9 @@ function Header() {
         </nav>
       </div>
 
-      {/* Sidebar (Mobile) */}
+      {/* ✅ Sidebar (Mobile) */}
       <div
-        className={`fixed top-0 right-0 h-screen w-full bg-white shadow-2xl transform transition-transform duration-500 ease-in-out z-1050 overflow-y-auto ${
+        className={`fixed top-0 right-0 h-screen w-full bg-white shadow-2xl transform transition-transform duration-500 ease-in-out z-[1050] overflow-y-auto ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
@@ -178,7 +205,7 @@ function Header() {
           </button>
         </div>
 
-        {/* Mobile Links */}
+        {/* ✅ Mobile Links */}
         <div className="w-full flex flex-col items-start gap-4 p-6 font-primary">
           {navLinks.map((nav, index) => {
             const isActive = pathname === nav.url;
@@ -212,7 +239,6 @@ function Header() {
                         <li key={idx}>
                           <Link
                             href={child.path}
-                            onClick={() => setIsOpen(false)}
                             className="block text-[16px] py-1 text-black hover:text-[#071F45]"
                           >
                             {child.title}
@@ -222,7 +248,6 @@ function Header() {
                       <li>
                         <Link
                           href={nav.url}
-                          onClick={() => setIsOpen(false)}
                           className="block text-[16px] py-2 text-[#071F45] font-medium"
                         >
                           View all {nav.title}
@@ -238,7 +263,6 @@ function Header() {
               <Link
                 key={index}
                 href={nav.url}
-                onClick={() => setIsOpen(false)}
                 className={`font-primary font-normal text-[18px] py-1 transition-colors duration-300
                   ${
                     isActive
@@ -251,28 +275,31 @@ function Header() {
             );
           })}
 
-          {/* CTA Button */}
+          {/* ✅ CTA Button */}
           <div className="w-full flex justify-center mt-6">
-            <button
-              onClick={handleNavigate}
-              className="text-[16px] bg-[#071F45] py-2 px-8 text-white font-medium rounded-full hover:bg-black hover:text-white transition duration-300"
+            <Link
+              href="tel:+8619925880257"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[16px] font-primary bg-primary py-2 px-4 text-white font-[500] rounded-full hover:bg-gray-800 transition duration-300"
+              type="button"
             >
-              Contact Us
-            </button>
+              Get in Touch
+            </Link>
           </div>
 
-          {/* Social Links */}
+          {/* ✅ Social Links */}
           <div className="mt-4 w-full flex items-center justify-center">
             <SocialMediaLinks />
           </div>
         </div>
       </div>
 
-      {/* Overlay */}
+      {/* ✅ Overlay */}
       {isOpen && (
         <div
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 z-9999"
+          className="fixed inset-0 z-[999]"
         ></div>
       )}
     </header>

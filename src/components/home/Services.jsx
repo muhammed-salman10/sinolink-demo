@@ -1,8 +1,13 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 function Services() {
+  const router = useRouter();
+  const handleNavigate = () => {
+    router.push("/services");
+  };
   const services = [
     {
       img: "/assets/images/home/sea-frieght.webp",
@@ -63,9 +68,9 @@ function Services() {
                   <p className="text-white/90 text-sm md:text-base my-2">
                     {item.desc}
                   </p>
-                  <button className="text-white border border-white px-3 py-1.5 rounded-lg text-sm hover:bg-white hover:text-black transition duration-300">
+                  {/* <button className="text-white border border-white px-3 py-1.5 rounded-lg text-sm hover:bg-white hover:text-black transition duration-300">
                     Learn more
-                  </button>
+                  </button> */}
                 </div>
               </div>
             ))}
@@ -73,7 +78,10 @@ function Services() {
 
           {/* Explore button */}
           <div className="flex justify-center mt-10">
-            <button className="bg-[#071F45] text-[#B4D1FF] text-sm md:text-base font-medium px-5 py-2 rounded-lg shadow-md hover:bg-[#0b2d60] transition-all duration-300">
+            <button
+              onClick={handleNavigate}
+              className="bg-[#071F45] text-[#B4D1FF] text-sm md:text-base font-medium px-5 py-2 rounded-lg shadow-md hover:bg-[#0b2d60] transition-all duration-300"
+            >
               Explore More
             </button>
           </div>

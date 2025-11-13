@@ -11,7 +11,7 @@ function Hero() {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="relative w-full lg:h-screen h-[450px] md:h-[550px] flex items-end"
+      className="relative w-full lg:h-[680px] h-[450px] md:h-[550px] flex items-end"
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/10"></div>

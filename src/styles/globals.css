@@ -145,37 +145,31 @@
       -3.62px -3.62px 7.52px -0.91px rgba(0, 0, 0, 0.23);
   }
 
-  /* src/styles/loader.css */
-
-  /* Truck moving animation */
-  @keyframes move-container {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(150px);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  /* ===== Truck Move Animation ===== */
+@keyframes moveTruck {
+  0% {
+    transform: translateX(0);
   }
-
-  /* Track line animation */
-  @keyframes track {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
+  100% {
+    transform: translateX(240px); /* Adjust based on container width */
   }
+}
 
-  /* Animation classes */
-  .animate-move-container {
-    animation: move-container 2.5s ease-in-out infinite;
+@keyframes moveTrack {
+  0% {
+    transform: translateX(-100%);
   }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
-  .animate-track {
-    animation: track 2s linear infinite;
-  }
+/* Apply animation */
+.animate-move-container {
+  animation: moveTruck 4.5s linear infinite alternate;
+}
+
+.animate-track {
+  animation: moveTrack 1.5s linear infinite;
+}
 

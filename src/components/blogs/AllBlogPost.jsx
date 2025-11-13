@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import blogs from "@/data/allBlogs.json";
+import CtaBanner from "../common/cta-banner/CtaBanner";
 
 const AllBlogPost = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -94,6 +95,7 @@ const AllBlogPost = () => {
             Next
           </button>
         </div> */}
+        <CtaBanner/>
       </div>
     </section>
   );

@@ -11,10 +11,10 @@ function MissionAndVision() {
         <div className="bg-[#071F45] md:rounded-t-[38px] rounded-t-[24px] flex flex-col md:flex-row items-center overflow-hidden">
           {/* left-section - content */}
           <div className="text-white w-full lg:w-1/2 px-4 py-6 lg:px-8">
-            <span className="uppercase font-[400] text-[20px] md:text-[20px]">
+            <span className="uppercase font-[400] text-[18px] md:text-[20px]">
               our vision
             </span>
-            <h3 className="text-[24px] lg:text-[30px]  mt-2 md:mt-4 max-w-md font-[500]">
+            <h3 className="text-[22px] lg:text-[30px]  mt-2 md:mt-4 max-w-md font-[500]">
               Building a Smarter, Connected Logistics Future
             </h3>
             <p className="text-[18px] lg:text-[22px] md:text-[12px] font-[400] font-secondary mt-3 ">
@@ -56,10 +56,10 @@ function MissionAndVision() {
           </div>
           {/* right-section - content */}
           <div className="text-black w-full md:w-1/2 flex flex-col justify-center px-4 md:py-6 md:px-8 ">
-            <span className="uppercase font-[400] text-[20px] md:text-[20px] ">
+            <span className="uppercase font-[400] text-[18px] md:text-[20px] ">
               our mission
             </span>
-            <h3 className="text-[24px] lg:text-[30px] md:text-[22px] text-black mb-3 md:mb-4 max-w-md font-[500]">
+            <h3 className="text-[22px] lg:text-[30px] md:text-[22px] text-black mb-3 md:mb-4 max-w-md font-[500]">
              Committed to Excellence in Every Delivery
             </h3>
             <p className="text-[18px] lg:text-[22px] md:text-[12px] font-[400] font-secondary max-w-xl pb-6 md:pb-0">

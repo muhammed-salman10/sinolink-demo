@@ -13,22 +13,22 @@ function Footer() {
   const contactInfo = [
     {
       title: "Phone",
-      value: "+971-4-3933 244",
+      value: "+86 199 2588 0257",
       icon: <FiPhone />,
-      path: "",
+      path: "tel:+8619925880257",
     },
     {
       title: "Email",
-      value: "logistics@maxplusuae.com",
+      value: "Operations@sinolinkinternational.com",
       icon: <FaEnvelope />,
-      path: "",
+      path: "mailto:Operations@sinolinkinternational.com",
     },
     {
       title: "Location",
       value:
-        "59P4+329 - Ras Al Khor Industrial Area - Ras Al Khor Industrial Area 2 - Dubai - United Arab Emirates",
+        "D24, Building D, Yiyou Auto Parts City (Guangyuan East), Guangzhou City, Guangdong Province",
       icon: <TiLocationOutline size={34} />,
-      path: "",
+      path: "https://maps.apple.com/place?address=Hengzhigang%20Road%20and%20Luhu%20Road%20Intersection%20Northeast%20140%20Meters,%20Yuexiu,%20Guangzhou,%20Guangdong%20China&coordinate=23.153456,113.295482&name=Yiyou%20(Guangyuan%20East)%20Automobile%20Parts%20City%20Unit%20B&place-id=H2710I3F994A88AD9E7&map=explore",
     },
   ];
   return (

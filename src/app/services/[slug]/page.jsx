@@ -29,7 +29,7 @@ export default function ServiceDetailsPage() {
   }
 
   return (
-    <section className="py-10 px-4 md:px-10 mt-20">
+    <section className="py-10 px-4 md:px-10 ">
       <div className="container mx-auto">
         {/* ✅ Title Section */}
         <div className="text-center">
