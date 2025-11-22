@@ -11,7 +11,7 @@ function About() {
         <Hero/>
         <MissionAndVision/>
         <Map/>
-        <OurTeam/>
+        {/* <OurTeam/> */}
         <CtaBanner/>
     </div>
   )

@@ -13,11 +13,11 @@ function Home() {
     <div>
       <Hero/>
       <About/>
-      <OurClients/>
+      {/* <OurClients/> */}
       <Commitments/>
       <Services/>
       <Faq/>
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <CtaBanner/>
     </div>
   )

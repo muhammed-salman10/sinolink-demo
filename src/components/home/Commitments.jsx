@@ -3,7 +3,7 @@ import React from "react";
 
 function Commitments() {
   return (
-    <section className=" lg:pb-26 pb-10">
+    <section className=" lg:pb-26 pb-10 lg:py-14 py-10">
       <div className="container">
         {/* border-box */}
         <div className="border w-full lg:h-[450px] h-full bg-[#071F45] flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-10 lg:py-30">

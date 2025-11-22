@@ -15,29 +15,29 @@ function SocialMediaLinks() {
   const socialMediaLinks = [
     {
       title: "Facebook",
-      path: "",
+      path: "https://www.facebook.com/profile.php?id=61584172522269",
       icon: <FaFacebookF />,
     },
     {
       title: "Instagram",
-      path: "",
+      path: "https://www.instagram.com/sinolink_intl?igsh=MXhwMmJiNmxhdW03Nw%3D%3D&utm_source=qr",
       icon: <FaInstagram />,
     },
-    {
-      title: "Pinterest",
-      path: "",
-      icon: <FaPinterest />,
-    },
+    // {
+    //   title: "Pinterest",
+    //   path: "",
+    //   icon: <FaPinterest />,
+    // },
     {
       title: "Linkedin",
-      path: "",
+      path: "https://www.linkedin.com/company/110183138/admin/dashboard/",
       icon: <FaLinkedinIn />,
     },
-        {
-      title: "Twitter",
-      path: "",
-      icon: <FaXTwitter />,
-    },
+    // {
+    //   title: "Twitter",
+    //   path: "",
+    //   icon: <FaXTwitter />,
+    // },
   ];
   return (
     <div className="w-max flex items-center justify-center gap-4">
